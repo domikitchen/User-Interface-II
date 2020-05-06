@@ -8,6 +8,10 @@ html {
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: -1px;
 }
+a:hover {
+    transition: ease-in .25s;
+    opacity: 50%;
+}
 header {
     border-bottom: 5px solid #8f8f8f;
     background-color: #d4d4d4;
@@ -35,13 +39,15 @@ section {
 }
 #containerOne {
     flex-wrap: nowrap;
-    align-items: flex-end;
     margin: 10px;
 }
+#containerOne {
+    align-items: center;
+}
 .content {
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     margin-left: 20px;
-    margin-bottom: 20px;
+    align-items: flex-end;
 }
 .content h2 {
     margin: 40px 0;
@@ -54,7 +60,7 @@ section {
     padding: 10px 15px;
 }
 .content p {
-    margin: 30px 0;
+    margin-top: 30px;
 }
 #containerTwo {
     display: flex;
@@ -71,6 +77,10 @@ section {
 #containerTwo img {
     max-width: 100%;
     max-height: 100%;
+}
+#containerTwo div img:hover {
+    transition: ease-in .25s;
+    opacity: 50%;
 }
 footer {
     margin-top: 100px;
@@ -89,4 +99,9 @@ footer a {
     text-decoration: none;
     border-radius: 3px;
     padding: 10px 15px;
+}
+footer nav {
+    text-align: right;
+    padding-top: 40px;
+    opacity: 50%;
 }
