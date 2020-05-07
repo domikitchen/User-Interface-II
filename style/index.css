@@ -8,6 +8,10 @@ html {
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: -1px;
 }
+.current {
+    background-color: silver;
+    color: grey;
+}
 a:hover {
     transition: ease-in .25s;
     opacity: 50%;
@@ -44,10 +48,17 @@ section {
 #containerOne {
     align-items: center;
 }
-.content {
-    padding: 0 10px 10px 10px;
+#containerOne div {
+    width: 50%;
+}
+#containerOne img {
+    width: 100%;
+}
+#containerOne div.content {
+    padding: 10px 10px 0 10px;
     margin-left: 20px;
-    align-items: flex-end;
+    margin-bottom: 10px;
+    align-self: flex-end;
 }
 .content h2 {
     margin: 40px 0;
@@ -81,6 +92,10 @@ section {
 #containerTwo div img:hover {
     transition: ease-in .25s;
     opacity: 50%;
+}
+#containerTwo p {
+    margin-top: 10px;
+    text-align: center;
 }
 footer {
     margin-top: 100px;
